@@ -8,7 +8,7 @@ import github from '../images/GitHub.png';
 var datosGames= [
     {title:"SpaceShip Roguelike",fecha:"2022" ,description:"Juego profesional para Android de naves, estilo rogueLike en el que juegas partidas cortas y freneticas. Desplegado en la play store, conectado a la api de google play juegos y monetizado mediante Admob (anuncios)",link:"https://play.google.com/store/apps/details?id=org.godotengine.spaceRogueLikeASB",linkText:"Enlace a la play Store",image:ssrl},
     {title:"Epic Chili Android",fecha:"2017" ,description:"Juego RPG completo de historia Sevillana para Android, basado en RPG Maker",link:"https://drive.google.com/file/d/1iAv-6_dE43gAGHwUR8VGJkFmSaegtCW5/view",linkText:"Enlace a la descarga"},
-    {title:"Pokemon Sin nombre oficial aun :) ",fecha:"2016",description:"Demo Juego de PC no profesional de Pokemon totalmente customizado, basado en RPG maker muy scripteado",link:"https://mega.nz/file/ZNJkEBrA#iz0PVXq2U6u6IzNaSpVSIeMi87W-oBqvdGVJRoiqU-I",linkText:"Enlace a la descarga",image:pokemon},
+    {title:"Pokemon Sin nombre oficial aun :) ",fecha:"2016",description:"Demo Juego de PC no profesional de Pokemon totalmente customizado, basado en RPG maker muy scripteado",link:"https://mega.nz/folder/IRowUBqa#8v-5B5G-BYJv9DL65b5JNg",linkText:"Enlace a la descarga",image:pokemon},
     {title:"Sueco el sueco",fecha:"2012",description:"Prototipo RPG basico",link:"https://mega.nz/file/UZRmnTxJ#xqYLlOcM-kG4Q0KPpOyz6A5iIFOeu9qDIEiJ6MSQZv0",linkText:"Enlace a la descarga"}
 
 
@@ -23,7 +23,7 @@ const elementsArrayGames= datosGames.map((item,pos)=>{
 })
 
 var datosProyectos= [
-    {title:"React Website",fecha:"2022",description:"Literalmente esta pagina, hecha con objetivos formativos siguiendo el curso react-js-a-complete-guide-for-frontend-web-development de Udemy, react + materialicecss,desplegada en firebase",link:"https://github.com/AlejandroMonteseirin/React_Alex_Website",linkText:"Enlace a github",image:github},
+    {title:"React Website",fecha:"2022",description:"Literalmente esta pagina, hecha con objetivos formativos siguiendo el curso react-js-a-complete-guide-for-frontend-web-development de Udemy, react + materialicecss, desplegada en firebase",link:"https://github.com/AlejandroMonteseirin/React_Alex_Website",linkText:"Enlace a github",image:github},
     {title:"Angular_Testing_Karma_Jasmine",fecha:"2021",description:"Prototipo de repositorio de una aplicación Angular11+ con Test Automatizados utilizando Karma Jasmine",link:"https://github.com/AlejandroMonteseirin/Angular_Testing_Karma_Jasmine",linkText:"Enlace a github",image:github},
     {title:"Plantilla Angular",fecha:"2020-2022" ,description:"Proyecto plantilla de Angular 10+ con los componentes NgPrime, ngx-translate y otros preparados. Utilizado para agilizar la creación de un nuevo proyecto Angular",link:"https://github.com/AlejandroMonteseirin/ProyectoPlantillaAngular10NgPrime",linkText:"Enlace a github",image:github},
     {title:"Backend Node.js",fecha:"2020",description:"Prototipo de Backend basado en Node.js, siguiendo el curso Curso de node.js en Platzi.com",link:"https://github.com/AlejandroMonteseirin/Backend-Node.js",linkText:"Enlace a github",image:github},
