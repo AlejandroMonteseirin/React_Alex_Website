@@ -5,7 +5,7 @@ const ListElement = (properties) => {
 
     var imagen=<div className="card-title" ><div style={{padding:"1em",fontSize:"larguer",fontWeight:"bolder"}}>{properties.title} </div></div>;
     if (properties.image!=null && properties.isGithub){
-        imagen= <div className="card-image"><img style={{width:"30%",left:"60%",paddingTop:"1em"}} src={properties.image}/><span className="card-title" style={{position:"inherit",paddingTop:"1em",fontSize:"larguer",fontWeight:"bolder"}}>{properties.title}</span></div> 
+        imagen= <div className="card-image"><img style={{width:"20%",paddingTop:"1em"}} src={properties.image}/><span className="card-title" style={{position:"inherit",paddingTop:"1em",fontSize:"larguer",fontWeight:"bolder"}}>{properties.title}</span></div> 
 
     }else if(properties.image!=null){
         imagen= <div className="card-image"><img src={properties.image}/><span className="card-title" style={{position:"inherit",paddingTop:"1em",fontSize:"larguer",fontWeight:"bolder"}}>{properties.title}</span></div> 
