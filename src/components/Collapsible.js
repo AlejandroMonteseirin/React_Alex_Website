@@ -1,5 +1,4 @@
 import * as React from 'react';
-import logo from '../logo.svg';
 import ListElement from './ListElement';
 import ssrl from '../images/ssrl.png';
 import pokemon from '../images/pokemon.PNG';
