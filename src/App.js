@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 
 
-import HeaderPage from './HeaderPage';
-import ListElement from './ListElement';
-
+import HeaderPage from './components/HeaderPage';
+import M from 'materialize-css';
+import Collapsible from './components/Collapsible';
 function timeout(delay) {
-  return new Promise( res => setTimeout(res, delay) );
+  return new Promise(res => setTimeout(res, delay));
 }
 /*function App() {
   var texto=" Bienvenido a mi pagina web..."
@@ -23,19 +22,23 @@ function timeout(delay) {
   );
 }*/
 
-function App(){
-
+function App() {
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.collapsible');
+    var options = null;
+    var instances = M.Collapsible.init(elems, options);
+  });
   return (
-    <><HeaderPage /><div className="App">
-      <header className="App-header">
-        <h3>Bienvenido a mi pagina web</h3>
-        <ListElement title="TEST"></ListElement>
-        <ListElement title="TEST2"></ListElement>
 
-      </header>
+    <>    <div className="App">
+
+      <HeaderPage />
+      <div style={{height:"3em"}}></div>
+      <Collapsible />
+
     </div></>
-    );  
-  
+  );
+
 }
 
 export default App;
