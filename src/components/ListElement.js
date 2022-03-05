@@ -2,12 +2,12 @@ import * as React from 'react';
 
 const ListElement = (properties) => {
 
-    var imagen=<div className="card-title" ><div style={{padding:"1em",fontSize:"larguer",fontWeight:"bolder"}}>{properties.title} </div></div>;
+    var imagen=<div className="card-title" style={{position:"relative"}} ><div style={{padding:"1em",fontSize:"larguer",fontWeight:"bolder"}}>{properties.title} </div></div>;
     if (properties.image!=null && properties.isGithub){
-        imagen= <div className="card-image"><img  alt={properties.title} style={{width:"20%",paddingTop:"1em"}} src={properties.image}/><span className="card-title" style={{position:"inherit",paddingTop:"1em",fontSize:"larguer",fontWeight:"bolder"}}>{properties.title}</span></div> 
+        imagen= <div className="card-image"><img  alt={properties.title} style={{width:"20%",paddingTop:"1em"}} src={properties.image}/><span className="card-title" style={{position:"relative",paddingTop:"1em",fontSize:"larguer",fontWeight:"bolder",wordWrap: "break-word"}}>{properties.title}</span></div> 
 
     }else if(properties.image!=null){
-        imagen= <div className="card-image"><img alt={properties.title} src={properties.image}/><span className="card-title" style={{position:"inherit",paddingTop:"1em",fontSize:"larguer",fontWeight:"bolder"}}>{properties.title}</span></div> 
+        imagen= <div className="card-image"><img alt={properties.title} src={properties.image}/><span className="card-title" style={{position:"relative",wordWrap: "break-word",paddingTop:"1em",fontSize:"larguer",fontWeight:"bolder"}}>{properties.title}</span></div> 
 
     }
     return (
