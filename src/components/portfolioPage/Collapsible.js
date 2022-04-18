@@ -1,18 +1,16 @@
 import * as React from 'react';
 import ListElement from './ListElement';
-import ssrl from '../images/ssrl.png';
-import pokemon from '../images/pokemon.PNG';
-import github from '../images/GitHub.png';
+import ssrl from '../../images/ssrl.png';
+import pokemon from '../../images/pokemon.PNG';
+import github from '../../images/GitHub.png';
+import TechnicalParentComponent from '../TechnicalReact/TechnicalParentComponent'
 
+//Static data will never change
 var datosGames= [
     {title:"SpaceShip Roguelike",fecha:"2022" ,description:"Juego profesional para Android de naves, estilo rogueLike en el que juegas partidas cortas y freneticas. Desplegado en la play store, conectado a la api de google play juegos y monetizado mediante Admob (anuncios)",link:"https://play.google.com/store/apps/details?id=org.godotengine.spaceRogueLikeASB",linkText:"Enlace a la play Store",image:ssrl},
     {title:"Epic Chili Android",fecha:"2017" ,description:"Juego RPG completo de historia Sevillana para Android, basado en RPG Maker",link:"https://drive.google.com/file/d/1iAv-6_dE43gAGHwUR8VGJkFmSaegtCW5/view",linkText:"Enlace a la descarga"},
     {title:"Pokemon Sin nombre oficial aun :) ",fecha:"2016",description:"Demo Juego de PC no profesional de Pokemon totalmente customizado, basado en RPG maker muy scripteado",link:"https://mega.nz/folder/IRowUBqa#8v-5B5G-BYJv9DL65b5JNg",linkText:"Enlace a la descarga",image:pokemon},
     {title:"Sueco el sueco",fecha:"2012",description:"Prototipo RPG basico",link:"https://mega.nz/file/UZRmnTxJ#xqYLlOcM-kG4Q0KPpOyz6A5iIFOeu9qDIEiJ6MSQZv0",linkText:"Enlace a la descarga"}
-
-
-
-
 ];
 
 const elementsArrayGames= datosGames.map((item,pos)=>{
@@ -47,7 +45,7 @@ export default function Collapsible() {
     return (
         <div style={{margin:"1em", backgroundColor:"#1E6167"}}>
             <ul className="collapsible" style={{  borderColor:"#282C34"}}>
-                <li className="active">
+                <li>
                     <div className="collapsible-header" style={{ backgroundColor:"#224E54",borderColor:"#282C34"}}><i className="material-icons">book</i>Proyects</div>
                     <div className="collapsible-body"> {elementsArrayProyectos}</div>
                 </li>
@@ -56,8 +54,8 @@ export default function Collapsible() {
                     <div className="collapsible-body"> {elementsArrayGames}</div>
                 </li>
                 <li>
-                    <div className="collapsible-header" style={{ backgroundColor:"#224E54",borderColor:"#282C34"}}><i className="material-icons">grade</i>Others</div>
-                    <div className="collapsible-body"> Aqui no hay nada aún... </div>
+                    <div className="collapsible-header" style={{ backgroundColor:"#224E54",borderColor:"#282C34"}}><i className="material-icons">grade</i>Technical React</div>
+                    <div className="collapsible-body"><TechnicalParentComponent></TechnicalParentComponent></div>
                 </li>
                 
             </ul>

@@ -1,9 +1,9 @@
 import './App.css';
 
 
-import HeaderPage from './components/HeaderPage';
+import HeaderPage from './components/portfolioPage/HeaderPage';
 import M from 'materialize-css';
-import Collapsible from './components/Collapsible';
+import Collapsible from './components/portfolioPage/Collapsible';
 
 
 function App() {
@@ -14,13 +14,13 @@ function App() {
   });
   return (
 
-    <>    <div className="App">
+       <div className="App">
 
       <HeaderPage />
       <div style={{height:"3em"}}></div>
       <Collapsible />
 
-    </div></>
+    </div>
   );
 
 }
